@@ -6,7 +6,7 @@ import { Feather, Octicons } from '@expo/vector-icons';
 export default function Transaction() {
     return (
             <View className='p-6 flex-row items-center justify-between '>
-              <View className='flex-row'>
+              <View className='flex-row items-center'>
                 <Octicons name="note" size={24} color="black" />
                 <View className='ml-4 gap-0'>
                   <Text className='text-gray-700 text-lg mb-2 font-bold'>Assinatura Ifood</Text>

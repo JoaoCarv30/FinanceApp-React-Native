@@ -14,7 +14,7 @@ export default function Card() {
             <View className="h-px bg-gray-600" />
 
             <View>
-                <Text className='text-2xl text-gray-300'>Orçamento Disponível</Text>
+                <Text className='text-2xl text-gray-300'>Saldo Disponível</Text>
                 <Text className='text-4xl text-white font-bold mt-2'>R$ 1.000,00</Text>
             </View>
             <View className='flex-row justify-between'>
