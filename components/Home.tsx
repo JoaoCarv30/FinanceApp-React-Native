@@ -1,12 +1,11 @@
-import { ScreenContent } from 'components/ScreenContent';
 import { StatusBar } from 'expo-status-bar';
 
-import './global.css';
 import { View, Text, ScrollView, Image, Pressable } from 'react-native';
 import Card from 'components/card';
 import { Feather } from '@expo/vector-icons';
-import Octicons from '@expo/vector-icons/Octicons';
 import Transaction from 'components/Transaction';
+import { Link } from "expo-router";
+import "../global.css";
 
 
 
@@ -14,7 +13,7 @@ import BottomSheet, { BottomSheetView } from '@gorhom/bottom-sheet';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { useMemo, useRef } from 'react';
 
-export default function App() {
+export default function Home() {
 
   const bottomSheetRef = useRef<BottomSheet>(null);
 
@@ -31,13 +30,15 @@ export default function App() {
       <GestureHandlerRootView style={{ flex: 1 }}>
         <View className='h-screen p-4  bg-gray-100 flex  mt-16'>
 
+          
 
           <View className='flex-row items-center gap-4'>
-            <Image source={require('./assets/avatar.jpg')} className='w-16 h-16 rounded-full  ' />
+            <Image source={require('.././assets/avatar.jpg')} className='w-16 h-16 rounded-full  ' />
             <Text className='text-black text-2xl font-bold ml-4'>Seja Bem vindo, João</Text>
           </View>
 
           <Card />
+          
 
           <View className='mt-10 rounded-lg  bg-white shadow-lg relative'>
             <View className='flex-row justify-between items-center p-6'>
